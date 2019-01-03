@@ -1,6 +1,11 @@
+import ventaja from "../ventajas/ventajas.vue"
+
 export default {
+  components:{
+    'ventaja':ventaja
+  },
   data: () => ({
-    inicio:true,
+    inicio:1,
     ecosystem: [
       {
         text: 'vuetify-loader',
@@ -56,11 +61,11 @@ export default {
   methods:{
     viewpreview(){
       this.$store.dispatch('setScreen',"Vista previa(default)")
-      this.inicio = false
+      this.inicio = 3
     },
     back(){
-      this.$store.dispatch('setScreen',"Bienvenidos al taller")
-      this.inicio = true
+      this.$store.dispatch('setScreen',"Instalación de vue con vuetify")
+      this.inicio = 2
     }
   }
 }

@@ -1,14 +1,15 @@
 <template>
   <v-container>
+    <v-flex v-if="inicio == 1">
+      <h1 class="blue-grey--text darken-1 text-uppercase text-md-center">
+        Bienvenidos al mini taller de Vue
+      </h1>
+      <ventaja @instalar="back"/>
+    </v-flex>
     <v-layout
-      v-if="inicio"
+      v-if="inicio == 2"
       wrap
     >
-      <v-flex xs12>
-        <h1 class="blue-grey--text darken-1 text-uppercase text-md-center">
-          Bienvenidos al mini taller de Vue usando Vuetify
-        </h1>
-      </v-flex>
       <v-flex xs12>
         <v-icon>extension</v-icon>
         <span class="headline blue-grey--text darken-3">
@@ -80,7 +81,7 @@
     <v-layout
       text-xs-center
       wrap
-      v-else
+      v-if="inicio == 3"
     >
       <v-flex xs12>
         <v-img
@@ -164,7 +165,7 @@
           <v-icon>keyboard_arrow_left</v-icon>
           Atras
         </v-btn>
-        <v-btn color="success">
+        <v-btn color="success" to="/base">
           <v-icon>keyboard_arrow_right</v-icon>
           Pasar a la siguiente lección
         </v-btn>

@@ -18,6 +18,12 @@
             Realizado por Miguel Villamizar de ANALITICOM - Mérida 
             <v-icon small>group</v-icon>
           </b>
+        </p><span style="margin: 0px 5px;">/</span>
+        <p>
+          <b>
+            Realizado por Reichel Yanez de ANALITICOM - Caracas 
+            <v-icon small>group</v-icon>
+          </b>
         </p>
       </v-layout>
     </v-footer>
@@ -25,6 +31,8 @@
 </template>
 
 <script>
+import './plugins/prism.js'
+import './plugins/prism.css'
 export default {
   name: 'App',
 }
