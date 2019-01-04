@@ -11,7 +11,7 @@
       wrap
     >
       <v-flex xs12>
-        <v-icon>extension</v-icon>
+        <v-icon>fa-cogs</v-icon>
         <span class="headline blue-grey--text darken-3">
           Instalación de vue como framework junto con vuetify
         </span><br>
@@ -19,20 +19,20 @@
           Para iniciar instalaremos 
           <a href="https://cli.vuejs.org/guide/installation.html">vue-cli</a> 
         </span>
-        <pre>
-          <code style="box-shadow: none;" class="language-bash">
+        <pre class="language-bash">
+          <code style="box-shadow: none;">
             npm install -g @vue/cli
           </code>
         </pre>
         <span> Una vez instalado Vue-cli comprobamos que este instalado</span>
-        <pre>
-          <code style="box-shadow: none;" class="language-bash">  
+        <pre class="language-bash">
+          <code style="box-shadow: none;">  
             vue --version # 3.2.1
           </code>
         </pre>
         <span> Ahora crearemos nuestro proyecto</span>
-        <pre>
-          <code style="box-shadow: none;" class="language-bash">  
+        <pre class="language-bash">
+          <code style="box-shadow: none;">  
             vue create my-proyect
           </code>
         </pre>
@@ -53,8 +53,8 @@
           Bien luego de instalado nos falta añadir vuetify a nuestra aplicacion primero que todo
           nos desplazaremos a la carpeta de nuestro proyecto el cual acabamos de crear.
         </span>
-        <pre>
-          <code style="box-shadow: none;" class="language-bash">  
+        <pre class="language-bash">
+          <code style="box-shadow: none;">  
             cd my-project
             # Añadiremos vuetify
             vue add vuetify
@@ -62,8 +62,8 @@
           </code>
         </pre>
         <span>Bueno ahora podemos iniciar nuestro proyecto ya dentro de la carpeta</span>
-        <pre>
-          <code style="box-shadow: none;" class="language-bash">
+        <pre class="language-bash">
+          <code style="box-shadow: none;">
             npm run serve
           </code>
         </pre>
@@ -72,10 +72,12 @@
           navegador de preferencia y en las url colocar <b>https://localhost:8080</b>
         </span>
         <br>
-        <v-btn color="success" dark @click="viewpreview">
-          <v-icon>visibility</v-icon> 
-          Vista previa
-        </v-btn>
+        <v-layout justify-center>
+          <v-btn color="success" dark @click="viewpreview">
+            <v-icon small class="mr-2">fa-eye</v-icon>  
+            Vista previa
+          </v-btn>
+        </v-layout>
       </v-flex>
     </v-layout>
     <v-layout
@@ -162,11 +164,11 @@
         <v-btn color="red darken-2" 
           dark 
           @click="back">
-          <v-icon>keyboard_arrow_left</v-icon>
+          <v-icon small class="mr-2">fa-chevron-left</v-icon>
           Atras
         </v-btn>
         <v-btn color="success" to="/base">
-          <v-icon>keyboard_arrow_right</v-icon>
+          <v-icon small class="mr-2">fa-chevron-right</v-icon>
           Pasar a la siguiente lección
         </v-btn>
       </v-layout>

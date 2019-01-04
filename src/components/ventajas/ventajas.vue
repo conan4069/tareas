@@ -1,7 +1,7 @@
 <template>
 <v-layout row wrap>
   <v-btn color="success" @click="$emit('instalar')">
-    <v-icon>keyboard_arrow_right</v-icon>
+    <v-icon small class="mr-2">fa-chevron-right</v-icon>
     Siguiente
   </v-btn>
 </v-layout>

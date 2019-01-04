@@ -16,13 +16,13 @@
         <p>
           <b>
             Realizado por Miguel Villamizar de ANALITICOM - Mérida 
-            <v-icon small>group</v-icon>
+            <v-icon small>fa-users</v-icon>
           </b>
         </p><span style="margin: 0px 5px;">/</span>
         <p>
           <b>
-            Realizado por Reichel Yanez de ANALITICOM - Caracas 
-            <v-icon small>group</v-icon>
+            Reichel Yanez de ANALITICOM - Caracas 
+            <v-icon small>fa-users</v-icon>
           </b>
         </p>
       </v-layout>
@@ -31,8 +31,6 @@
 </template>
 
 <script>
-import './plugins/prism.js'
-import './plugins/prism.css'
 export default {
   name: 'App',
 }
