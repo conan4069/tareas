@@ -8,6 +8,8 @@ import VuePrism from 'vue-prism'
 Vue.use(VuePrism)
 import 'prismjs/themes/prism-tomorrow.css'
 import 'prismjs/components/prism-bash.js'
+import 'prismjs/components/prism-markup.js'
+
 
 Vue.config.productionTip = false
 import Vuetify from 'vuetify'

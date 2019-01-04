@@ -1,7 +1,7 @@
 export default{
   data: () => ({
     open: ['src'],
-    open2: ['components'],
+    open2: ['task'],
     files: {
       html: 'fa-html5',
       js: 'fa-file-code-o',

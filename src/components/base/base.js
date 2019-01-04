@@ -1,8 +1,10 @@
 import estructura from "./estructura.vue"
+import inicio from "./inicioApp.vue"
 
 export default{
   components:{
-    'estructura': estructura
+    'estructura': estructura,
+    'inicio': inicio
   },
   data () {
     return {

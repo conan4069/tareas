@@ -50,7 +50,7 @@
             </li>
           </ul>
           Ahora esperaremos que realice la configuración default con nuestra configuración.
-          Bien luego de instalado nos falta añadir vuetify a nuestra aplicacion primero que todo
+          Bien luego de instalado nos falta añadir vuetify a nuestra aplicación primero que todo
           nos desplazaremos a la carpeta de nuestro proyecto el cual acabamos de crear.
         </span>
         <pre class="language-bash">

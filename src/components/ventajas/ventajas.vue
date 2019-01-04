@@ -8,8 +8,8 @@
     <span>
       Vue es un <v-tooltip bottom><kbd slot="activator">framework</kbd><span>aporta estructura ahora hacer una aplicación</span></v-tooltip> progresivo para construir interfaces de usuario. Se enfoca solo en la capa de la vista, y es muy simple de utilizar e integrar con otros proyectos o bibliotecas existentes. Simplemente con importar la librería en el HTML (Desde un CDN como cdnjs o unkpg) ya podemos utilizar Vue.
     </span>
-    <pre>
-        <code style="box-shadow: none;" class="language-javascritp">
+    <pre class="language-html">
+        <code style="box-shadow: none;">
           &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"&gt;&lt;/script&gt;
         </code>
     </pre>   
@@ -32,7 +32,7 @@
                     </p>
                   </div>
                 </v-card-title>
-                <v-card-actions  align-end>
+                <v-card-actions align-end>
                   <v-divider light></v-divider>
                   <v-bottom-sheet>
                     <v-btn dark slot="activator" color="white" class="blue-grey--text">
