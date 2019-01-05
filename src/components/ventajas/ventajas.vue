@@ -1,7 +1,7 @@
 <template>
 <v-layout row wrap>
   <v-flex xs12>
-    <v-icon>fa-info</v-icon>
+    <v-icon>fa-info-circle</v-icon>
     <span  class="headline blue-grey--text darken-3 "> ¿Qué es Vue.js y por que usarlo? </span>
     <br>
     <br>
@@ -14,10 +14,10 @@
         </code>
     </pre>   
     <br>
-    <p>        	
-      Vue fue creado en un intento de simplificar el funcionamiento de AngularJS. Esta inpirado en las virtudes que poseen ReactJs y AngularJs, por lo que su documentación es bastante fácil de aprender si está migrando desde otros frameworks, y en caso de que no se tenga experiencia su código fuente es muy legible lo que permite una curva de aprendizaje mucho mas rapida. Si tuviésemos que definir a VueJS por cuatro de sus aspectos conceptuales serían estos:
+    <p>         
+      Vue fue creado en un intento de <kbd>simplificar</kbd> el funcionamiento de AngularJS. Esta inpirado en las virtudes que poseen ReactJs y AngularJs, por lo que su documentación es bastante fácil de aprender si está migrando desde otros frameworks, y en caso de que no se tenga experiencia su código fuente es muy legible lo que permite una curva de aprendizaje mucho mas rapida. Si tuviésemos que definir a VueJS por sus aspectos conceptuales serían estos:
     </p>
-    <br>			
+    <br>      
     <v-container fluid grid-list-sm>
       <v-layout row wrap>
         <v-flex d-flex xs12>
@@ -28,7 +28,7 @@
                   <div>
                     <div class="headline">Framework Progresivo</div>
                     <p class="pb-5 pt-2">
-                      Vue se autodenomina como <kbd>progresivo</kbd>, podemos usarlo para algo múy básico, o para algo más complejo como el desarrollo de una SPA. Siempre con un rendimiento y experiencia de desarrollo muy buena.
+                      Vue se autodenomina como <kbd>progresivo</kbd>, podemos usarlo para algo múy básico, o para algo más complejo como el desarrollo de una <v-tooltip bottom><kbd slot="activator">SPA</kbd><span>Single Page Application</span></v-tooltip> . Siempre con un rendimiento y experiencia de desarrollo muy buena.
                     </p>
                   </div>
                 </v-card-title>
@@ -46,7 +46,7 @@
                           class="my-3"
                           contain          
                           height="500"
-                        ></v-img>						
+                        ></v-img>           
                       </a>
                       <br>
                     </v-card>
@@ -55,7 +55,7 @@
               </v-card>
             </v-flex>
             <v-flex d-flex xs4>
-               <v-card color="cyan darken-2" class="white--text">
+               <v-card color="orange darken-2" class="white--text">
                 <v-card-title primary-title>
                   <div>
                     <div class="headline">Intuitivo, moderno y fácil de usar</div>
@@ -78,7 +78,7 @@
                           class="my-3"
                           contain          
                           height="500"
-                        ></v-img>						
+                        ></v-img>           
                       </a>
                       <br>
                     </v-card>
@@ -91,12 +91,12 @@
         <v-flex d-flex xs12>
           <v-layout row wrap>
             <v-flex d-flex xs4>
-              <v-card color="cyan darken-2" class="white--text">
+              <v-card color="orange darken-2" class="white--text">
                 <v-card-title primary-title>
                   <div>
                     <div class="headline">Sistema de componentes reactivo</div>
                     <p class="">
-                      se convierte en un organismo vivo que reacciona muy bien al cambio y realiza acciones programadas por el desarrollador. VueJS sabe comunicarse muy bien por medio de eventos asíncronos.
+                      Se convierte en un organismo vivo que <kbd>reacciona</kbd> muy bien al cambio y realiza acciones programadas por el desarrollador. VueJS sabe comunicarse muy bien por medio de <kbd>eventos</kbd> asíncronos.
                     </p>
                   </div>
                 </v-card-title>
@@ -114,7 +114,7 @@
                           class="my-3"
                           contain          
                           height="500"
-                        ></v-img>						
+                        ></v-img>           
                       </a>
                       <br>
                     </v-card>
@@ -123,12 +123,12 @@
               </v-card>
             </v-flex>
             <v-flex d-flex xs5>
-               <v-card color="cyan darken-2" class="white--text">
+               <v-card color="teal darken-2" class="white--text">
                 <v-card-title primary-title>
                   <div>
                     <div class="headline">El dato como centro de todo</div>
                     <p class="pb-4 pt-4">
-                      los componentes gestionan un modelo de datos interno y proporciona un complejo cliclo de vida que permite manipular el comportamiento de un componente en cualquier estado.
+                      Los componentes gestionan un modelo de datos interno y proporciona un complejo  <kbd>cliclo de vida</kbd>  que permite manipular el comportamiento de un componente en cualquier estado.
                     </p>
                   </div>
                 </v-card-title>
@@ -146,7 +146,7 @@
                           class="my-3"
                           contain          
                           height="500"
-                        ></v-img>						
+                        ></v-img>           
                       </a>
                       <br>
                     </v-card>
@@ -160,7 +160,7 @@
                   <div>
                     <div class="headline">Comunidad muy activa</div>
                     <span>
-                      VueJS es un proyecto Open Source que cuenta con una comunidad muy viva. Es un proyecto gestionado, desarrollado, evolucionado y planteado por y para la comunidad.  
+                      VueJS es un proyecto <v-tooltip bottom><kbd slot="activator">Open Source</kbd><span>modelo de desarrollo de software basado en la colaboración abierta</span></v-tooltip> que cuenta con una comunidad muy viva. Es un proyecto gestionado, desarrollado, evolucionado y planteado por y para la comunidad.  
                     </span>
                   </div>
                 </v-card-title>
@@ -171,8 +171,8 @@
                       <v-icon>fa-link</v-icon>
                     </v-btn>
                     <v-card tile class="text-md-center">
-                      <br>											
-                      <v-btn large outline round dark color="cyan" target="_blank" href="https://github.com/vuejs/awesome-vue/graphs/commit-activity" class="mb-4" >Awesome VueJS</v-btn>														
+                      <br>                      
+                      <v-btn large outline round dark color="teal" target="_blank" href="https://github.com/vuejs/awesome-vue/graphs/commit-activity" class="mb-4" >Awesome VueJS</v-btn>                           
                       <br>
                     </v-card>
                   </v-bottom-sheet>
@@ -184,24 +184,24 @@
         <v-flex d-flex xs12>
           <v-layout row wrap>
             <v-flex d-flex xs5>
-              <v-card color="cyan darken-2" class="white--text">
+              <v-card color="teal darken-2" class="white--text">
                 <v-card-title primary-title>
                   <div>
                     <div class="headline">Facil Integracion</div>
                     <span>
-                      La forma modular en la que esta construido permite integrar diversas herramientas conforme se necesites, esto hace que desarrollar en VueJS sea más intuitivo, es casi como trabajar con JavaScript nativo.   
+                      La forma modular en la que esta construido permite integrar diversas herramientas conforme se necesites, esto hace que desarrollar en VueJS sea más <kbd>intuitivo</kbd>.   
                     </span>
                   </div>
                 </v-card-title>
               </v-card>
             </v-flex>
             <v-flex d-flex xs7>
-              <v-card color="cyan darken-2" class="white--text">
+              <v-card color="orange darken-2" class="white--text">
                 <v-card-title primary-title>
                   <div>
                     <div class="headline">Ecosistema muy variado</div>
                     <span>
-                      VueJS tiene a su alrededor una serie de herramientas que ayudan a conseguir que el desarrollador sepa en todo momento qué está haciendo y cómo lo está haciendo.   
+                      VueJS tiene a su alrededor una serie de <kbd>herramientas</kbd> que ayudan a conseguir que el desarrollador sepa en todo momento qué está haciendo y cómo lo está haciendo.   
                     </span>
                   </div>
                 </v-card-title>
@@ -212,30 +212,29 @@
                       <v-icon>fa-list</v-icon>
                     </v-btn>
                     <v-card tile class="text-md-center">
-                      <br>											
+                      <br>                      
                       <v-list>
-                        <v-subheader>Herramientas</v-subheader>                                                
+                        <v-subheader>Herramientas</v-subheader>       
                         <v-list-group v-for="item in items" :key="item.title" no-action>
                           <v-list-tile slot="activator">
                             <v-list-tile-content>
-                              <v-list-tile-title>
-                                {{ item.title }}
-                                <v-btn v-if="item.link" small flat dark color="cyan" target="_blank" :href="item.link" >
-                                  <v-icon>fa-link fa-2x</v-icon>
+                              <v-list-tile-title style="height: auto">
+                                <v-btn v-if="item.link" small flat dark color="teal" target="_blank" :href="item.link" >
+                                  {{ item.title }}
+                                </v-btn>
+                                <v-btn v-else small flat dark color="teal">
+                                  {{ item.title }}
                                 </v-btn>
                               </v-list-tile-title>
                             </v-list-tile-content>
                           </v-list-tile>
                           <v-list-tile >
                             <v-list-tile-content>
-                              <v-list-tile-title>
-                                {{ item.resume }}                                
-                                <br>
-                              </v-list-tile-title>                               
+                              <v-list-tile-sub-title v-html="item.resume"></v-list-tile-sub-title>                              
                             </v-list-tile-content>
                           </v-list-tile>
                         </v-list-group>
-                      </v-list>									
+                      </v-list>                 
                       <br>
                     </v-card>
                   </v-bottom-sheet>
@@ -247,10 +246,12 @@
       </v-layout>
     </v-container>
     <br>  
-    <v-btn color="success" @click="$emit('instalar')">
-      <v-icon>fa-chevron-right</v-icon>
-        Siguiente
-    </v-btn>
+    <v-layout justify-center>
+      <v-btn color="success" @click="$emit('instalar')">
+        <v-icon>fa-chevron-right</v-icon>
+          Siguiente
+      </v-btn>
+    </v-layout>
     </v-flex>
 </v-layout>
 </template>
