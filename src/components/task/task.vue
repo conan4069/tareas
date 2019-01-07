@@ -2,6 +2,8 @@
 <v-container fluid :style="{
   'background-color': typeof(task.colorBg) === 'string' ? task.colorBg : task.colorBg.hex,
   'color': task.color,
+  'box-shadow': '8px 4px 20px -7px rgba(0,0,0,.6),4px -2px 4px 2px rgba(0,0,0,.2)',
+  'border-radius': '30px 0px 30px 0px',
   'position': 'relative',
   'height': '100%'
 }">
@@ -19,38 +21,53 @@
       >
         <v-icon>fa-tachometer</v-icon>
       </v-btn>
-      <v-card tile>
-        <span :style="{
-          'color': task.color ? 'white' : 'black',
-          'padding': '5px',
-          'width': '10px',
-          'white-spacing': 'nowrap',
-          'text-overflow': 'ellipsis',
-          'background-color': typeof(task.colorBg) === 'string' ? task.colorBg : task.colorBg.hex
-        }">
-          <b>Ejemplo de los colores: </b>{{ task.text }}
-        </span>
+      <v-card tile style="height: 32em;overflow-y:auto">
         <v-form>
+          <p :style="{
+            'color': task.color ? 'white' : 'black',
+            'padding': '5px',
+            'border-radius': '15px 0px 20px 0px',
+            'width': '30rem !important',
+            'white-space': 'nowrap',
+            'overflow': 'hidden',
+            'text-overflow': 'ellipsis',
+            'box-shadow': '8px 10px 20px -7px rgba(0,0,0,.7)',
+            'background-color': typeof(task.colorBg) === 'string' ? task.colorBg : task.colorBg.hex
+          }">
+            <b>Ejemplo de los colores: </b>{{ task.text }}
+          </p>
           <v-container>
             <v-text-field
               v-model="task.text"
               label="Agregar una tarea"
             >
             </v-text-field>
-            <p class="text-md-center display-1 blue-grey--text darken-3">
-              <b>Colores de la tarea</b>
-            </p>
-            <v-layout row justify-center py-3>
-              <chrome-picker 
-                disableAlpha 
-                v-model="task.colorBg">
-              </chrome-picker>
-              <v-checkbox
-              label="letras blancas"
-              v-model="task.color"
-              >  
-              </v-checkbox>
-            </v-layout>
+            <v-expansion-panel popuout>
+              <v-expansion-panel-content
+              >
+              <div slot="header">
+                <p class="text-md-center display-1 blue-grey--text darken-3">
+                  <b>Colores de la tarea</b>
+                </p>
+              </div>
+              <v-layout row justify-center py-3>
+                <v-flex xs12 md4>
+                  <chrome-picker 
+                    disableAlpha 
+                    v-model="task.colorBg">
+                  </chrome-picker>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-checkbox
+                    label="letras blancas"
+                    v-model="task.color"
+                    color="blue-grey darken-2"
+                  >  
+                  </v-checkbox>
+                </v-flex>
+              </v-layout>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
           </v-container>
         </v-form>
       </v-card>
