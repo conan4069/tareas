@@ -1,4 +1,7 @@
 <template>
-  <h1>hola</h1>
+<v-container>
+  <h1>hola soy la leccion</h1>
+  <tarea></tarea>
+</v-container>
 </template>
 <script src="./inicioApp.js"></script>

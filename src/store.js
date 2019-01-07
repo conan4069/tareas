@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    screenNow:"Ventajas de vue"
+    screenNow:"Ventajas de vue",
+    last_id:0
   },
   getters:{
     getScreen: state => {

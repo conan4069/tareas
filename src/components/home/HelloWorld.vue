@@ -73,6 +73,12 @@
         </span>
         <br>
         <v-layout justify-center>
+          <v-btn color="red darken-2" 
+            dark 
+            @click="back_ventajas">
+            <v-icon small class="mr-2">fa-chevron-left</v-icon>
+            Atras
+          </v-btn>   
           <v-btn color="success" dark @click="viewpreview">
             <v-icon small class="mr-2">fa-eye</v-icon>  
             Vista previa

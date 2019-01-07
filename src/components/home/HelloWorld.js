@@ -66,6 +66,10 @@ export default {
     back(){
       this.$store.dispatch('setScreen',"Instalación de vue con vuetify")
       this.inicio = 2
+    },
+    back_ventajas(){
+      this.$store.dispatch('setScreen',"Ventajas de vue")
+      this.inicio = 1
     }
   }
 }

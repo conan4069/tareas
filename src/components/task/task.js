@@ -6,7 +6,14 @@ export default{
   data(){
     return {
       //Aca retornaremos todos los modelos que retornaremos
-      //y podran se usados desde el archivo .vue  
+      //y podran se usados desde el archivo .vue
+      colorBg:"#978989",
+      color:"black",
+      text:"",
+      description:"",
+      id:"",
+      dad:"",
+      type:"note"  
     }
   },
   computed:{
