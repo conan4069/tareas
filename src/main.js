@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import './plugins/vuetify'
-import './plugins/vue-dragula'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -24,9 +23,5 @@ Vue.component('chrome-picker', Chrome)
 new Vue({
   router,
   store,
-  render: h => h(App),
-  created () {
-    console.log(Vue)
-    
-  }
+  render: h => h(App)
 }).$mount('#app')
