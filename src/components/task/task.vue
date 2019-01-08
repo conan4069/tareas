@@ -87,13 +87,45 @@
                         <v-list-tile-sub-title>Hangouts video call</v-list-tile-sub-title>
                       </v-list-tile-content>
                     </v-list-tile> -->
-                    <v-list-tile @click="" class="add">
+                    <v-list-tile @click="dialog=!dialog" class="add">
                       <v-list-tile-content class="text-md-center">
                         <v-list-tile-sub-title>
                           <v-icon>fa-plus</v-icon>
                         </v-list-tile-sub-title>
                       </v-list-tile-content>
                     </v-list-tile>
+                    <v-dialog
+                      v-model="dialog"
+                      max-width="800px"
+                    >
+                      <v-card>
+                        <v-card-title class="headline">Añadir SubTarea</v-card-title>
+
+                        <v-card-text>
+                          Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+                        </v-card-text>
+
+                        <v-card-actions>
+                          <v-spacer></v-spacer>
+
+                          <v-btn
+                            color="green darken-1"
+                            flat="flat"
+                            @click="dialog = false"
+                          >
+                            Cancel
+                          </v-btn>
+
+                          <v-btn
+                            color="green darken-1"
+                            flat="flat"
+                            @click="dialog = false"
+                          >
+                            Añadir
+                          </v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-dialog>
                   </v-flex>
                   <v-flex xs12>
                     <p class="text-md-center title blue-grey--text darken-3">

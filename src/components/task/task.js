@@ -27,6 +27,7 @@ export default{
         type:"note"
       },
       fab:false,
+      dialog:false,
       customToolbar: [
         [{"header":[]}],
         ['bold', 'italic','underline',"strike","blockquote","code","code-block"],
