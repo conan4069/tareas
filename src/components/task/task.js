@@ -1,4 +1,5 @@
 import { VueEditor } from 'vue2-editor'
+import "./task.css"
 
 export default{
   components:{

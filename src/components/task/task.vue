@@ -72,17 +72,43 @@
                     <b>Información extra</b>
                   </p>
                 </div>
-                <p class="text-md-center display-1 blue-grey--text darken-3">
-                  <b>Información extra</b>
-                </p>
-                <v-layout row justify-center py-3>
-                    <vue-editor id="description" 
-                      name="description_field"
-                      v-model="task.description" 
-                      :editorToolbar="customToolbar"
-                      style="height:15em;margin-bottom: 4rem;"
-                    >      
-                    </vue-editor>  
+                <v-layout row wrap>
+                  <v-flex xs12>
+                    <p class="text-md-center title blue-grey--text darken-3">
+                      <b>Sub Tareas</b>
+                    </p>
+                    <!-- <v-list-tile @click="">
+                      <v-list-tile-action>
+                        <v-checkbox v-model="video"></v-checkbox>
+                      </v-list-tile-action>
+
+                      <v-list-tile-content @click="video = !video">
+                        <v-list-tile-title>Video sounds</v-list-tile-title>
+                        <v-list-tile-sub-title>Hangouts video call</v-list-tile-sub-title>
+                      </v-list-tile-content>
+                    </v-list-tile> -->
+                    <v-list-tile @click="" class="add">
+                      <v-list-tile-content class="text-md-center">
+                        <v-list-tile-sub-title>
+                          <v-icon>fa-plus</v-icon>
+                        </v-list-tile-sub-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+                  </v-flex>
+                  <v-flex xs12>
+                    <p class="text-md-center title blue-grey--text darken-3">
+                      <b>Descripción</b>
+                    </p>
+                    <v-layout row justify-center py-3>
+                        <vue-editor id="description" 
+                          name="description_field"
+                          v-model="task.description" 
+                          :editorToolbar="customToolbar"
+                          style="height:15em;margin-bottom: 4rem;"
+                        >      
+                        </vue-editor>  
+                    </v-layout>
+                  </v-flex>
                 </v-layout>
               </v-expansion-panel-content>
             </v-expansion-panel>
