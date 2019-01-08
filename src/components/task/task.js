@@ -1,4 +1,13 @@
+import { VueEditor } from 'vue2-editor'
+
 export default{
+  components:{
+    //En esta seccion colocaremos el llamado a otros componentes,
+    //de modo tal que quede key:component, la key sera la
+    //etiqueta html que creareamos y la cual hare referencia,
+    //a nuestro componente
+    'vue-editor':VueEditor
+  },
   props:{
     //Aqui definimos los valores cuando queremos que otro componente
     //Nos envie informacion pertinente a nuestro componente
@@ -8,15 +17,24 @@ export default{
       //Aca retornaremos todos los modelos que retornaremos
       //y podran se usados desde el archivo .vue
       task:{
-        colorBg:"#978989",
+        colorBg:"",
         color:false,
         text:"fdfdsafsdfsad",
         description:"",
         id:"",
-        dad:"",
+        group:"",
         type:"note"
       },
-      fab:false
+      fab:false,
+      customToolbar: [
+        [{"header":[]}],
+        ['bold', 'italic','underline',"strike","blockquote","code","code-block"],
+        [{"align":""},{"align":"center"},{"align":"right"},{"align":"justify"}],
+        [{ 'list': 'ordered'}, { 'list': 'bullet' },{"list":"check"}],
+        [{"script":"sub"},{"script":"super"}],
+        [{"indent":"-1"},{"indent":"+1"}],
+        [{"color":[]},{"background":[]}]
+      ]
     }
   },
   computed:{

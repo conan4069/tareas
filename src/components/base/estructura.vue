@@ -78,6 +78,12 @@
     <pre class="language-js">
       <code style="box-shadow: none;">
         export default{
+          components:{
+            //En esta seccion colocaremos el llamado a otros componentes,
+            //de modo tal que quede key:component, la key sera la
+            //etiqueta html que creareamos y la cual hare referencia,
+            //a nuestro componente
+          },
           props:{
             //Aqui definimos los valores cuando queremos que otro componente
             //Nos envie informacion pertinente a nuestro componente

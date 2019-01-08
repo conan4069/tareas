@@ -43,31 +43,49 @@
             >
             </v-text-field>
             <v-expansion-panel popuout>
-              <v-expansion-panel-content
-              >
-              <div slot="header">
+              <v-expansion-panel-content>
+                <div slot="header">
+                  <p class="text-md-center display-1 blue-grey--text darken-3">
+                    <b>Colores de la tarea</b>
+                  </p>
+                </div>
+                <v-layout row justify-center py-3>
+                  <v-flex xs12 md4>
+                    <chrome-picker 
+                      disableAlpha 
+                      v-model="task.colorBg">
+                    </chrome-picker>
+                  </v-flex>
+                  <v-flex xs12 md4>
+                    <v-checkbox
+                      label="letras blancas"
+                      v-model="task.color"
+                      color="blue-grey darken-2"
+                    >  
+                    </v-checkbox>
+                  </v-flex>
+                </v-layout>
+              </v-expansion-panel-content>
+              <v-expansion-panel-content>
+                <div slot="header">
+                  <p class="text-md-center display-1 blue-grey--text darken-3">
+                    <b>Información extra</b>
+                  </p>
+                </div>
                 <p class="text-md-center display-1 blue-grey--text darken-3">
-                  <b>Colores de la tarea</b>
+                  <b>Información extra</b>
                 </p>
-              </div>
-              <v-layout row justify-center py-3>
-                <v-flex xs12 md4>
-                  <chrome-picker 
-                    disableAlpha 
-                    v-model="task.colorBg">
-                  </chrome-picker>
-                </v-flex>
-                <v-flex xs12 md4>
-                  <v-checkbox
-                    label="letras blancas"
-                    v-model="task.color"
-                    color="blue-grey darken-2"
-                  >  
-                  </v-checkbox>
-                </v-flex>
-              </v-layout>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
+                <v-layout row justify-center py-3>
+                    <vue-editor id="description" 
+                      name="description_field"
+                      v-model="task.description" 
+                      :editorToolbar="customToolbar"
+                      style="height:15em;margin-bottom: 4rem;"
+                    >      
+                    </vue-editor>  
+                </v-layout>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
           </v-container>
         </v-form>
       </v-card>
