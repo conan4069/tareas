@@ -10,14 +10,12 @@
               <v-icon>fa-more_vert</v-icon>
             </v-btn>
           </v-toolbar>
-          <v-list two-lines ref="list" :data-group="group.title" v-dragula="group.title" :key="group.title">
-            <template v-for="task in getTasks(group.title)">       
-              <v-list-tile class="drag-item" id="task.id" >
+          <v-list two-lines ref="list" :data-group="group.title" :key="group.title">    
+              <v-list-tile v-for="task in getTasks(group.title)" class="drag-item" :id="task.id" :key="task.id">
                 <v-list-tile-content>
                   <v-list-tile-title v-html="task.text"></v-list-tile-title>
                 </v-list-tile-content>
-              </v-list-tile>    
-            </template>      
+              </v-list-tile>        
           </v-list>
         </v-card>
       </v-flex>
