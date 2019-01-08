@@ -48,7 +48,7 @@
             </v-list-tile-action>
             <v-list-tile-content>
                 <v-list-tile-title>
-                    <router-link to="/task">
+                    <router-link to="/groups">
                         <v-list-tile-title>
                           Administrador de tareas
                         </v-list-tile-title>
