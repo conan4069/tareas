@@ -13,7 +13,8 @@ export default{
     //Aqui definimos los valores cuando queremos que otro componente
     //Nos envie informacion pertinente a nuestro componente
     taskInfo : Object,
-    group: String
+    group: String,
+    lesson: String
   },
   data(){
     return {

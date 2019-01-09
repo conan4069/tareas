@@ -1,12 +1,18 @@
 import estructura from "./estructura.vue"
 import inicio from "./inicioApp.vue"
 import repeticion from "./repeticion.vue"
+import task from "../task/task.vue"
+import importarComponents from "./importar.vue"
+import ciclos from "./condicionales.vue"
 
 export default{
   components:{
     'estructura': estructura,
     'inicio': inicio,
-    'repeticion':repeticion
+    'repeticion':repeticion,
+    "task":task,
+    "importarComponents":importarComponents,
+    "condicionales": ciclos
   },
   data () {
     return {

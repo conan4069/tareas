@@ -27,7 +27,7 @@
         </code>
       </pre>
     </v-flex>    
-    <v-fle xs12><br>
+    <v-flex xs12><br>
       <span class="display-1 blue-grey--text dark">
         <b>Personalizando Task.vue</b>
       </span><br><br>
@@ -50,7 +50,7 @@
           }"> &lt;/vcontainer>
         </code>
       </pre>
-    </v-fle>
+    </v-flex>
     <v-flex py-2 xs12>
       <span class="body-2"> 
         Ya teniendo nuestro v-container creado dentro del template, debemos crear un v-layout
@@ -92,8 +92,7 @@
       </pre>
     </v-flex>
   </v-layout>
-  <h1>hola soy la leccion</h1>
-  <tarea></tarea>
+  <tarea lesson="2"></tarea>
 </v-container>
 </template>
 <script src="./inicioApp.js"></script>

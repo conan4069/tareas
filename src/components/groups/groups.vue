@@ -86,6 +86,7 @@
           </v-toolbar>
           <v-list two-lines ref="list" :data-group="group.title" :key="group.title">    
             <task :taskInfo="task" :group="group.title"
+              lesson="6"
               v-for="task in getTasks(group.title)" class="drag-item" :key="task.id+'-task'"
             >
             </task>

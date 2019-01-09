@@ -1,7 +1,7 @@
 <template>
 <v-container>
   <v-layout row wrap pb-2>
-    <v-fle xs12><br>
+    <v-flex xs12><br>
       <span class="body-2"> 
         Ahora si la aplicación creciera a tal punto que cada tarea tuviera asociada sub-listas de tareas, necesitaremos una forma de recorrer esas sub tareas y mostrar su  contenido, para esto vue nos permite utilizar la directiva <b>v-for</b> para renderisar listas
       </span> <br>
@@ -12,7 +12,7 @@
           &lt;/v-list-tile-title>
         </code>
       </pre>
-    </v-fle>
+    </v-flex>
     <v-flex py-2 xs12>
       <span class="body-2">
         Para que esta directiva pueda funcionar necesita tener la sintactis especial de <b>(value,i) in task.subtask</b>, donde <b>task.subtask</b> es la colección de tareas que vamos a recorrer, <b>value</b> es el valor de la lista en el que estamos e <b>i</b> es el numero de iteracion. Con ella se pueden recorrer desde arrays hasta objetos.
@@ -46,6 +46,7 @@
         Esta contenido sera repetido por cada nueva sub tarea que le proporcionemos permitiendonos crear niveles de informacion cada vez mas complejos
       </span> <br>    
     </v-flex>
+    <task lesson="3"></task>
   </v-layout>
 </v-container>
 </template>

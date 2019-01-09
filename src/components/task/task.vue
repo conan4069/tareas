@@ -67,7 +67,7 @@
                 </v-flex>
               </v-layout>
             </v-expansion-panel-content>
-            <v-expansion-panel-content>
+            <v-expansion-panel-content v-if="lesson != 2">
               <div slot="header">
                 <p class="text-md-center display-1 blue-grey--text darken-3">
                   <b>Información extra</b>
@@ -78,7 +78,8 @@
                   <p class="text-md-center title blue-grey--text darken-3">
                     <b>Sub Tareas</b>
                   </p>
-                  <v-list-tile style="position: relative;" v-for="(value,i) in task.subtask" :key="i">
+                  <v-list-tile style="position: relative;" 
+                    v-for="(value,i) in task.subtask" :key="i">
                     <v-list-tile-action>
                       <v-checkbox v-model="value.done"
                         color="blue-grey darken-2"
@@ -153,7 +154,7 @@
                     </v-card>
                   </v-dialog>
                 </v-flex>
-                <v-flex xs12>
+                <v-flex xs12 v-if="lesson > 3">
                   <p class="text-md-center title blue-grey--text darken-3">
                     <b>Descripción</b>
                   </p>
