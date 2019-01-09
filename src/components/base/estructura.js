@@ -25,6 +25,10 @@ export default{
               {
                 name:"task.js",
                 file:"js"
+              },
+              {
+                name:"task.css",
+                file:"txt"
               }
             ]
           }
