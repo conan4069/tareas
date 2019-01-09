@@ -1,10 +1,12 @@
 import estructura from "./estructura.vue"
 import inicio from "./inicioApp.vue"
+import repeticion from "./repeticion.vue"
 
 export default{
   components:{
     'estructura': estructura,
-    'inicio': inicio
+    'inicio': inicio,
+    'repeticion':repeticion
   },
   data () {
     return {
