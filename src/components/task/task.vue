@@ -101,7 +101,7 @@
                       <v-icon>fa-trash</v-icon>
                     </v-btn>
                   </v-list-tile>
-                  <v-list-tile @click="dialog=!dialog" class="add">
+                  <v-list-tile @click="dialog = !dialog" class="add">
                     <v-list-tile-content class="text-md-center">
                       <v-list-tile-sub-title>
                         <v-icon>fa-plus</v-icon>
@@ -122,6 +122,7 @@
                       <v-card-text>
                         <v-form @submit.prevent="save()">
                           <v-text-field
+                            autofocus
                             v-model="text"
                             label="Tarea"
                           >
