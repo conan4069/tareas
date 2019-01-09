@@ -8,20 +8,30 @@ export default{
   },
   data(){
     return {
+      fab:false,
       groups: [
         {
           title: 'to-do',
-          color: 'indigo'
+          colorBg: 'indigo',
+          color:true
         }, 
         {
           title: 'doing',
-          color: 'amber'
+          colorBg: 'amber',
+          color:true
         },
         {
           title: 'done',
-          color: 'teal'
+          colorBg: 'teal',
+          color:true
         },
       ],
+      group:{
+        'title':"",
+        'colorBg':"",
+        'color':""
+      },
+      addTask:false,
       tasks: [
         {
           id: 1,
@@ -78,6 +88,15 @@ export default{
           description:""
         },
       ],
+      task:{
+        colorBg:"",
+        color:false,
+        description:"",
+        id:"",
+        group:"",
+        subtask:[],
+        text:""
+      }
     }
   },
   methods: {
@@ -86,6 +105,31 @@ export default{
     },
     updatetasks(id, group) {
       this.tasks.find(task => task.id === Number(id)).group = group;
+    },
+    save(){
+      this.group.colorBg = this.group.colorBg.hex
+      this.groups.push(this.group)
+      this.group = {
+        'text':"",
+        'colorBg':"",
+        'color':""
+      }
+      this.fab = false
+    },
+    createTask(gp){
+      if(this.tasks.length > 0){
+        this.task.id = this.tasks[this.tasks.length - 1].id + 1
+      }
+      else{
+        this.task.id = 1  
+      }
+      this.task.group = gp
+      this.task.text = ""
+      this.addTask = true
+    },
+    saveTask(){
+      this.tasks.push(this.task)
+      this.addTask = false
     }
   },
   mounted () {

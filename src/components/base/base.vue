@@ -48,6 +48,19 @@
           </v-layout>
         </v-layout>
       </v-stepper-content>
+      <v-stepper-content step="4">
+        <v-layout row wrap>
+          <v-flex xs12>
+            <repeticion></repeticion>
+          </v-flex>
+          <v-layout justify-center>
+            <v-btn @click="changeStep(5)" color="blue-grey darken-2" dark>
+              <v-icon small class="mr-2">fa-chevron-right</v-icon>
+              Siguiente lección
+            </v-btn>
+          </v-layout>
+        </v-layout>
+      </v-stepper-content>
     </v-stepper-items>
   </v-stepper>
 </template>

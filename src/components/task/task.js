@@ -90,6 +90,8 @@ export default{
     //Este es una funcion del lifecicle de la instancia
     // ver https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
     this.$store.dispatch("setScreen","Tareas")
-    this.task = this.taskInfo
+    if(this.taskInfo != undefined){
+      this.task = this.taskInfo
+    }
   }
 }
