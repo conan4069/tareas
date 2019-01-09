@@ -12,6 +12,8 @@ export default{
   props:{
     //Aqui definimos los valores cuando queremos que otro componente
     //Nos envie informacion pertinente a nuestro componente
+    taskInfo : Object,
+    group: String
   },
   data(){
     return {
@@ -88,5 +90,6 @@ export default{
     //Este es una funcion del lifecicle de la instancia
     // ver https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
     this.$store.dispatch("setScreen","Tareas")
+    this.task = this.taskInfo
   }
 }

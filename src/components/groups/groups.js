@@ -1,7 +1,11 @@
-import dragula from 'dragula';
-import 'dragula/dist/dragula.css';
+import dragula from 'dragula'
+import 'dragula/dist/dragula.css'
+import task from '../task/task.vue'
 
 export default{
+  components:{
+    'task':task
+  },
   data(){
     return {
       groups: [
@@ -22,32 +26,56 @@ export default{
         {
           id: 1,
           text: 'esto es una tarea to-do',
-          group: 'to-do'
+          group: 'to-do',
+          subtask:[],
+          colorBg:"",
+          color:false,
+          description:""
         },
         {
           id: 2,
           text: 'esto es una tarea to-do',
-          group: 'to-do'
+          group: 'to-do',
+          subtask:[],
+          colorBg:"",
+          color:false,
+          description:""
         },
         {
           id: 3,
           text: 'esto es una tarea done',
-          group: 'done'
+          group: 'done',
+          subtask:[],
+          colorBg:"",
+          color:false,
+          description:""
         },
         {
           id: 4,
           text: 'esto es una tarea done',
-          group: 'done'
+          group: 'done',
+          subtask:[],
+          colorBg:"",
+          color:false,
+          description:""
         },
         {
           id: 5,
           text: 'esto es una tarea doing',
-          group: 'doing'
+          group: 'doing',
+          subtask:[],
+          colorBg:"",
+          color:false,
+          description:""
         },
         {
           id: 6,
           text: 'esto es una tarea doing',
-          group: 'doing'
+          group: 'doing',
+          subtask:[],
+          colorBg:"",
+          color:false,
+          description:""
         },
       ],
     }
@@ -82,6 +110,5 @@ export default{
         }, 600);
       }, 100);
     })
-
   }
 }
