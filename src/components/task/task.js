@@ -20,12 +20,14 @@ export default{
       task:{
         colorBg:"",
         color:false,
-        text:"fdfdsafsdfsad",
         description:"",
         id:"",
         group:"",
-        type:"note"
+        subtask:[],
+        text:""
       },
+      text:"",
+      indextask:"",
       fab:false,
       dialog:false,
       customToolbar: [
@@ -42,10 +44,40 @@ export default{
   computed:{
     //Ahora estan los campos calculados es cuando queremos mostrar una variable
     //calculada o dinamica
+    totalSubtask(){
+      return this.task.subtask.length
+    },
+    completedSubtask(){
+      return this.task.subtask.filter(o => o.done === true ).length
+    }
   },
   methods:{
     //En esta seccion como su nombre lo dice crearemos
     //Todos los metodos que usaremos en nuestro componente
+    save(){
+      this.dialog = false
+      if(this.indextask === ''){
+        this.task.subtask.push({
+          'task': this.text,
+          'done': false
+        })
+      }
+      else{
+        this.task.subtask[this.indextask].task = this.text
+        this.indextask = ""
+      }
+      this.text = ""
+    },
+    editSubTask(index){
+      if(!this.task.subtask[index].done){
+        this.text = this.task.subtask[index].task
+        this.indextask = index
+        this.dialog = true
+      }
+    },
+    removeSubTask(index){
+      this.task.subtask.splice(index,1)
+    }
   },
   watch:{
     //Este es un observador que ando chequeando una variable especifica
