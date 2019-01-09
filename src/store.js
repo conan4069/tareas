@@ -10,17 +10,17 @@ export default new Vuex.Store({
   },
   getters:{
     getScreen: state => {
-        return state.screenNow
+      return state.screenNow
     }
   },
   mutations: {
     setScreen(state,newScreen){
-        state.screenNow = newScreen
+      state.screenNow = newScreen
     }
   },
   actions: {
     setScreen({commit},newScreen){
-        commit("setScreen",newScreen)
+      commit("setScreen",newScreen)
     }
   }
 })

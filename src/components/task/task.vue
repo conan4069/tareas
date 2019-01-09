@@ -2,12 +2,13 @@
 <v-container fluid :style="{
   'background-color': typeof(task.colorBg) === 'string' ? task.colorBg : task.colorBg.hex,
   'color': task.color,
-  'box-shadow': '8px 4px 20px -7px rgba(0,0,0,.6),4px -2px 4px 2px rgba(0,0,0,.2)',
+  'box-shadow': '8px 2px 20px -7px rgba(0,0,0,.6),1px -1px 2px 1px rgba(0,0,0,.2)',
   'border-radius': '30px 0px 30px 0px',
   'position': 'relative',
+  'margin-bottom':'1rem',
   'height': '100%'
 }">
-<v-layout row wrap>
+<v-layout row wrap :id="''+task.id">
   <v-bottom-sheet>
     <v-btn
       key="paint"
@@ -173,11 +174,12 @@
     </v-card>
   </v-bottom-sheet>
   <v-flex xs12>
-    <span class="display-1" :style="{
-      'color': task.color ? 'white' : 'black'
+    <p :style="{
+      'color': task.color ? 'white' : 'black',
+      'width': '25em'
     }">
       {{ task.text }}
-    </span>
+    </p>
   </v-flex>
 </v-layout>
 </v-container>
