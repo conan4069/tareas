@@ -35,7 +35,7 @@
             &lt;/v-flex>
             &lt;v-flex xs12>
               &lt;p class="text-md-center title blue-grey--text darken-3">
-                &lt;b>Descripción</b>
+                &lt;b>Descripción&lt;/b>
               &lt;/p>
               &lt;v-layout row justify-center py-3>
                 &lt;vue-editor id="description" 
@@ -94,7 +94,7 @@
             &lt;/v-flex>
             &lt;v-flex xs12>
               &lt;p class="text-md-center title blue-grey--text darken-3">
-                &lt;b>Descripción</b>
+                &lt;b>Descripción&lt;/b>
               &lt;/p>
               &lt;v-layout row justify-center py-3>
                 &lt;vue-editor id="description" 
